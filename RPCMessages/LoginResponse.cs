@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SlackAPI.SlackModels;
 
 namespace SlackAPI
 {
@@ -21,12 +22,12 @@ namespace SlackAPI
 		public User[] users;
 	}
 
-    public class Self
-    {
-        public DateTime created;
-        public string id;
-        public string manual_presence;
-        public string name;
-        public Preferences prefs;
-    }
+	public class Self
+	{
+		public DateTime created;
+		public string id;
+		public string manual_presence;
+		public string name;
+		public Preferences prefs;
+	}
 }

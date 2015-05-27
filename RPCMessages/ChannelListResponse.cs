@@ -1,4 +1,5 @@
 ﻿using System;
+using SlackAPI.SlackModels;
 
 namespace SlackAPI
 {
