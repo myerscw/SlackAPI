@@ -218,3 +218,4 @@ pip-log.txt
 *.chk
 *.ide
 packages
+*.private
