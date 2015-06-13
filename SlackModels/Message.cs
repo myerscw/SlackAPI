@@ -34,7 +34,7 @@ namespace SlackAPI.SlackModels
 		/// Text of the message to send.
 		/// </summary>
 		[JsonProperty("text")]
-		public string text { get; set; }
+		public string Text { get; set; }
 
 		/// <summary>
 		/// Change how messages are treated.

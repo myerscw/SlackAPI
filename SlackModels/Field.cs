@@ -25,5 +25,14 @@ namespace SlackAPI.SlackModels
 		/// </summary>
 		[JsonProperty("short")]
 		public bool Short;
+
+		public Field() { }
+
+		public Field(string Title, string Value, bool Short)
+		{
+			this.Title = Title;
+			this.Value = Value;
+			this.Short = Short;
+		}
 	}
 }

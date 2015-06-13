@@ -93,5 +93,34 @@ namespace SlackAPI.SlackModels
 		/// </summary>
 		[JsonProperty("image_url")]
 		public string ImageURL { get; set; }
+
+		public Attachment() { }
+		
+		public Attachment(string Title, string TitleLink, string Text, string Fallback, string Color, List<Field> Fields = null) {
+			this.Title = Title;
+			this.Text = Text;
+			this.TitleLink = TitleLink;
+			this.Fallback = Fallback;
+			this.Color = Color;
+			if (Fields != null)
+			{
+				this._fields = Fields;
+			}
+		}
+
+		public Attachment(string Title, string TitleLink, string Text, List<Field> Fields, string Fallback, string Color, string PreText, string AuthorName, string AuthorLink, string AuthorIcon, string ImageURL)
+		{
+			this.Title = Title;
+			this.TitleLink = TitleLink;
+			this.Text = Text;
+			this._fields = Fields;
+			this.Fallback = Fallback;
+			this.Color = Color;
+			this.Pretext = Pretext;
+			this.AuthorIcon = AuthorIcon;
+			this.AuthorLink = AuthorLink;
+			this.AuthorName = AuthorName;
+			this.ImageURL = ImageURL;
+		}
 	}
 }
