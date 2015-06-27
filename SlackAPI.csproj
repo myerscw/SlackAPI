@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="WebSocket4Net">
       <HintPath>Z:\Documents\Coding\Proscape\ProscapeSlack\ProscapeSlack\packages\WebSocket4Net.0.12\lib\net45\WebSocket4Net.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
